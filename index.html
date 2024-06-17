@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranjith S P - Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #5680E9;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            padding: 15px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #336699;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #5680E9;
+            padding-bottom: 10px;
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .project {
+            background: #f9f9f9;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            margin-top: 0;
+            color: #5680E9;
+        }
+
+        button {
+            background-color: #84CEEB;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5AB9EA;
+        }
+
+        #contact p {
+            font-size: 1.1em;
+        }
+
+        #contact a {
+            color: #5680E9;
+            text-decoration: none;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #5680E9;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am Ranjith S P, currently pursuing B.Tech in Information Technology at Kumaraguru College of Technology. As an active member of the Department Association, I have organized prestigious events such as Yugam 2022 and 2023, and facilitated intra-college hackathons to promote innovation and collaboration among peers. My passion for technology extends to full-stack development, with proficiency in a diverse range of programming languages and frameworks including C, Python, MySQL, ReactJS, Java, Django, C++, JavaScript, and NodeJS. I recently completed a rigorous 7-day React Bootcamp to enhance my front-end development skills. Engaging in Project Based Learning (PBL) has sharpened my problem-solving abilities and nurtured my creativity, preparing me to tackle complex challenges in the tech industry with confidence.</p>
+            <h2>Education</h2>
+            <h3>B.Tech, Information Technology</h3>
+            <p>Kumaraguru College of Technology, Saravanampatti, Coimbatore, Tamil Nadu</p>
+            <p>Graduation: May 2025 | CGPA: 8.64</p>
+            <h3>Class 12</h3>
+            <p>Shree Gurukulam Higher Secondary School, Gobichettipalayam, Erode, Tamil Nadu</p>
+            <p>Graduation: May 2021 | Marks: 95.1%</p>
+            <h3>Class 10</h3>
+            <p>Bharathi Matriculation School, Sathyamangalam, Erode, Tamil Nadu</p>
+            <p>Graduation: May 2019 | Marks: 97%</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Library Management System</h3>
+                <ul>
+                    <li>Library management system which enables user to login, signup, borrow books, return books and fine payment. The admin has the rights to add and remove books.</li>
+                    <li>Developed using Python (Tkinter) as frontend and MySQL for database.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>E-Commerce Website</h3>
+                <ul>
+                    <li>E-commerce website which enables user to purchase products, view list of products and manage the order history.</li>
+                    <li>Developed using React, HTML, CSS and Django.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Job Application Website</h3>
+                <ul>
+                    <li>This website ensures user to apply for job, attend interview, generate resume and search for jobs. The employer can specify the job domains.</li>
+                    <li>Tools: HTML, CSS, JavaScript, Django.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>The Complete 2024 Web Development Bootcamp – Udemy</li>
+                <li>Full Stack development with React – OneData Software Solutions</li>
+                <li>AWS Academy Graduate - AWS Academy Data Analytic</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:ranjithperiyasamysp@gmail.com">ranjithperiyasamysp@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/ranjith-s-p-a57824225/" target="_blank">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/Ranjithsp03/" target="_blank">Github Profile</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ranjith S P. All rights reserved.</p>
+    </footer>
+</body>
+</html>
